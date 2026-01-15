@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="manifest" href="public/manifest.json">
+
+</head>
+<body>
+
+  <!-- Fundo decorativo -->
+  <div class="background"></div>
+
+  <!-- App -->
+  <main class="app">
+
+<button id="installBtn" hidden>
+  Instalar app
+</button>
+
+
+
+    <!-- Cabeçalho -->
+    <header class="header">
+      <h1 class="titulo">Planejamento Diário</h1>
+      <p class="subtitle">Fluxo para o seu tempo</p>
+    </header>
+
+    <!-- Formulário -->
+    <section class="form-section">
+      <form id="form-compromisso">
+        <input
+          type="text"
+          id="titulo"
+          placeholder="Título do compromisso"
+          required
+        />
+
+        <input
+          type="date"
+          id="data"
+          required
+        />
+
+        <input
+          type="time"
+          id="hora"
+          required
+        />
+
+        <button type="submit">Adicionar</button>
+      </form>
+    </section>
+
+    <!-- Filtros -->
+    <section class="filters">
+      <button data-filter="todos" class="active">Todos</button>
+      <button data-filter="pendentes">Pendentes</button>
+      <button data-filter="concluidos">Concluídos</button>
+    </section>
+
+    <!-- Lista -->
+    <section class="list-section">
+      <ul id="lista-compromissos"></ul>
+
+      <p id="empty-state">
+        Nenhum compromisso adicionado 🌊
+      </p>
+    </section>
+
+  </main>
+
+  <!-- JS -->
+
+
+</body>
+</html>
