@@ -78,7 +78,21 @@
 
   </main>
 
-  <!-- JS -->
+    <!-- JS principal -->
+  <script src="js/script.js"></script>
+
+  <!-- Registro do Service Worker -->
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker
+          .register("./service-worker.js")
+          .then(() => console.log("Service Worker registrado com sucesso"))
+          .catch((err) => console.error("Erro ao registrar SW:", err));
+      });
+    }
+  </script>
+
 
 
 </body>

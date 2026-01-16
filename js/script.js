@@ -1,4 +1,4 @@
-console.log("JavaScript conectado");
+console.log("script.js carregado");
 
 const form = document.getElementById("form-compromisso");
 const tituloInput = document.getElementById("titulo");
